@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>BRAC Data Analytics Dashboard</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="css/mdb.min.css" rel="stylesheet">
+	<!-- Your custom styles (optional) -->
+	<link href="css/style.min.css" rel="stylesheet">
+	<style>
+		.side_nav {
+			position: fixed;
+            z-index:100;
+			width: 120px !important;
+			height: 100% !important;
+			background: #999999ff;
+		}
+
+		.bg{
+			position: relative;
+			background: #eeeeee;
+		}
+
+		.img_float{
+			padding: 10px !important;
+		}
+
+		.main_body{
+			position: absolute;
+			padding-left: 150px;
+			width: 100% !important;
+		}
+
+		.btn-rounded{
+			border-radius:10em;
+		}
+
+		.btn-rounded-2{
+			border-radius: 20px;
+		}
+
+		.btn-rounded-inf{
+			border-radius: 20px;
+		}
+
+		.mod_btn{
+			padding-left: 60px;
+			padding-right: 60px;
+			margin: 10px;
+			text-align: center;
+			font-size: 18px;
+		}
+
+		.inf_btn{
+			text-align: center;
+			font-size: 18px;
+			margin: 10px;
+			background: #999999ff !important;
+		}
+
+		.inf_btn:hover {
+			background: #999999ff !important;
+		}
+
+		.tioop{
+			text-align: center;
+			font-size: 20px;
+			margin: 20px;
+			padding: 60px;
+			background: #ffffff !important;
+		}
+		
+		.padd-l{
+			text-align: left;
+			padding-left: 40px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			padding-right: 60px;
+		}
+
+		.padd-r{
+			padding-right: 40px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+
+		.padd-inf{
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+
+		.info--txt{
+			text-align: left;
+			font-size: 25px !important;
+			padding: 20px;
+		}
+
+		.large{
+			font-size: 20px !important;
+		}
+
+		.informa{
+			text-align: left !important;
+			font-size: 18px !important;
+		}
+
+		.informa-2{
+			text-align: left !important;
+			font-size: 22px !important;
+		}
+
+		.infoss{
+			background: #999999ff !important;
+			border-radius: 20px;
+			border: 1px solid gray;
+		}
+	</style>
+</head>
+
+<body class="bg">
+	<div style="height: 100vh">
+		<div class="side_nav text-center">
+			<a href="index.html">
+			<img class="img_float mt-4" src="http://www.sclance.com/pngs/server-icon-png/server_icon_png_1224341.jpg" width="90px"/>
+			</a>
+			<img class="img_float mt-4" src="img/icons/ic.png" width="90px"/>
+			<img class="img_float mt-4" src="img/icons/ic4.png" width="90px"/>
+			<img class="img_float mt-4" src="img/icons/ic5.png" width="90px"/>
+			<img class="img_float mt-4" src="img/icons/ic6.png" width="90px"/>
+		</div>
+
+		<div class="container-fluid" style="padding-left: 150px;">
+			<img class="img_float" src="https://static.youthop.com/uploads/sites/2/2018/05/brac-logo-big.png" width="250px"/>
+			<br>
+			<a href="index.html"><button type="button" class="btn btn-outline-grey btn-rounded waves-effect mod_btn">Form Generator</button></a>
+			<a href="data_analysis.html"><button type="button" class="btn btn-elegant btn-rounded waves-effect mod_btn">Data Analysis</button></a>
+			<a href="tutorial.html"><button type="button" class="btn btn-outline-grey btn-rounded waves-effect mod_btn">Tutorial</button></a>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<a href="health_info.html">
+					<button type="button" class="btn btn-outline-elegant btn-rounded-2 waves-effect w-100">
+						<table>
+							<tr>
+								<td class="align-middle" style="width: 20%"><img src="img/icons/ic2.png" width="100px"/></td>
+								<td class="align-middle" style="width: 40%"><p class="informa-2"><b>Health<br>Data</b></p></td>
+								<td class="align-middle" style="width: 50%">
+								<p class="informa">
+									• Done - 60%<br>
+									• FeedBack - <font color="green">Moderate</font><br>
+									• Last Update - 19/7/19<br>
+									• BM ID :- 2342
+								</p>
+								</td>
+							</tr>
+						</table>
+					</button>
+					</a>
+
+					<a href="coaching_analysis.html">
+					<button type="button" class="btn btn-outline-elegant btn-rounded-2 waves-effect w-100">
+						<table>
+							<tr>
+								<td class="align-middle" style="width: 20%"><img src="img/icons/ic3.png" width="100px"/></td>
+								<td class="align-middle" style="width: 40%"><p class="informa-2"><b>Livestock<br>Data</b></p></td>
+								<td class="align-middle" style="width: 50%">
+								<p class="informa">
+									• Done - 30%<br>
+									• FeedBack - <font color="red">Alarming</font><br>
+									• Last Update - 19/7/19<br>
+									• BM ID :- 2346
+								</p>
+								</td>
+							</tr>
+						</table>
+					</button>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-12 text-center infoss w-100">
+					<button type="button" class="btn btn-outline-grey btn-rounded waves-effect tioop" style="background: white !important">BM ID:- 2346</button>
+					<p class="info--txt">
+						<b>
+							Name :- MD Saurav<br>
+							Area :- Manikganj<br>
+							Zone :- 4<br>
+							Family :- 10<br>
+							Contact :- 01711-xxxxxxx<br>
+						</b>
+					</p>
+					<button type="button" class="btn btn-outline-grey btn-rounded waves-effect tioop" style="background: white !important">Success Rate:- 70% <i class="fas fa-long-arrow-alt-up large"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- SCRIPTS -->
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

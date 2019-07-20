@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>BRAC Data Analytics Dashboard</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <style>
+        .side_nav {
+            position: fixed;
+            z-index: 100;
+            width: 120px !important;
+            height: 100% !important;
+            background: #999999ff;
+        }
+
+        .bg {
+            position: relative;
+            background: #eeeeee;
+        }
+
+        .img_float {
+            padding: 10px !important;
+        }
+
+        .info-1 {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body class="bg">
+    <div style="height: 100vh">
+        <div class="side_nav text-center">
+            <a href="index.html">
+                <img class="img_float mt-4"
+                    src="http://www.sclance.com/pngs/server-icon-png/server_icon_png_1224341.jpg" width="90px" />
+            </a>
+            <img class="img_float mt-4" src="img/icons/ic.png" width="90px" />
+            <img class="img_float mt-4" src="img/icons/ic4.png" width="90px" />
+            <img class="img_float mt-4" src="img/icons/ic5.png" width="90px" />
+            <img class="img_float mt-4" src="img/icons/ic6.png" width="90px" />
+        </div>
+        <div class="container-fluid" style="padding-left: 150px;">
+            <img class="img_float" src="https://static.youthop.com/uploads/sites/2/2018/05/brac-logo-big.png"
+                width="250px" />
+            <div class="row">
+                <div class="col-sm-12">
+                    <table class="table table-striped mb-0" style="width: 100%; border: 1px solid #000000">
+                        <thead class="black white-text">
+                            <th colspan="3">
+                                <h3 class="mb-0 text-center" style="padding: 15px;">
+                                    <b>
+                                        Sector : Livestock (Cow)<br>
+                                        Data Parameter : Coaching & Health
+                                    </b>
+                                </h3>
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="border: 1px solid #000000">Area : Manikganj</td>
+                                <td style="border: 1px solid #000000">Zone : 4</td>
+                                <td style="border: 1px solid #000000">Family : 10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-12">
+                    <table class="table">
+                        <tbody>
+                            <tr style="border: 1px solid black">
+                                <td class="text-center" style="width: 50%;">
+                                    <a href="coaching_analysis.html">
+                                        <img src="img/icons/ic9.png" width="70px" />
+                                        <br>
+                                        <p style="font-size: 22px">
+                                            <b>60%</b>
+                                            <br>
+                                            Coaching
+                                        </p>
+                                    </a>
+                                </td>
+
+                                <td class="text-center" style="background: #999999ff; width: 50%">
+                                    <a href="health_analysis.html">
+                                        <img src="img/icons/ic2.png" width="70px" />
+                                        <br>
+                                        <p style="font-size: 22px">
+                                            <b>40%</b>
+                                            <br>
+                                            Health
+                                        </p>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-12 col-md-6 mb-5">
+                    <table class="table">
+                        <thead>
+                            <tr class="text-center">
+                                <th class="black white-text" colspan="3" style="border: 1px solid black">
+                                    <h3>Health Analysis</h3>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-center">
+                                <td style="background: lightgreen">
+                                    <img src="img/icons/ic10.png" width="60px"/>
+                                    <br>
+                                    <p style="font-size: 22px">
+                                        <b>30%</b>
+                                        <br>
+                                        Healthy
+                                    </p>
+                                </td>
+                                <td style="background: lightcoral">
+                                    <img src="img/icons/ic10.png" width="60px"/>
+                                    <br>
+                                    <p style="font-size: 22px">
+                                        <b>70%</b>
+                                        <br>
+                                        Sick
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="text-center">
+                                <td colspan="2" style="border: 1px solid black">
+                                    <h5>Respiratory Disease- 40%</h5>
+                                </td>
+                            </tr>
+                            <tr class="text-center">
+                                <td colspan="2" style="border: 1px solid black">
+                                    <h5>Bovine Viral Diarrhea- 40%</h5>
+                                </td>
+                            </tr>
+                            <tr class="text-center">
+                                <td colspan="2" style="border: 1px solid black">
+                                    <h5>Blackleg- 40%</h5>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-12 col-md-6 mb-5">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script>
+        //bar
+        var ctxB = document.getElementById("barChart").getContext('2d');
+        var myBarChart = new Chart(ctxB, {
+            type: 'bar',
+            data: {
+                labels: ["Man (20 to 40)", "Woman (20 to 40)", "Woman (41 to 60+)"],
+                datasets: [{
+                    label: 'Affected Stakeholders',
+                    data: [30, 40, 30],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
